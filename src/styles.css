@@ -1,0 +1,248 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+    --light-gray: #F5F5F5;
+    --medium-gray: #E0E0E0;
+
+    --light-black: #8c8c8c;
+    --medium-black: #454545;
+
+    --sei-blue: #008bd2;
+
+    --menu-width: 270px;
+}
+
+/* Global ================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    color: var(--medium-black);
+}
+
+body {
+    font-family: 'Roboto','Ubuntu', sans-serif;
+}
+
+h1 {
+    font-size: 2.8rem;
+    padding-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+    padding-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    padding-bottom: 1.5rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+p {
+    line-height: 1.7rem;
+    padding-bottom: 1.3rem;
+}
+
+
+/* Menu ================ */
+.menu-top {
+    padding-top: 2rem;
+}
+
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0%;
+    display: block;
+    flex-direction: row;
+    height: 100vh;
+    width: var(--menu-width);
+    /* Trabalhando em conjunto o 'margin-left' do main */
+
+    background-color: var(--light-gray);
+    text-align: left;
+    line-height: 2rem;
+    /* padding-left: 2rem; */
+    overflow-y: auto;
+
+    /* align-items: center; */
+    /* box-shadow: 0 .3em 1em #000; */
+}
+
+li {
+    list-style-type: none;
+    padding-left: 2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+#first_li {
+    padding-top: 0.5rem;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--medium-black);
+}
+
+a:link {
+    text-decoration: none;
+    color: var(--medium-black);
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--medium-black);
+}
+
+a:hover {
+    color: var(--light-black);
+    color: var(--sei-blue);
+    cursor: pointer;
+}
+
+nav > ul > li:hover {
+    background-color: var(--medium-gray);
+    color: var(--light-black);
+    color: var(--sei-blue);
+    cursor: pointer;
+}
+
+.recuo-menu {
+    padding-left: 1.0rem;
+}
+
+
+/* Main ================ */
+
+main {
+    margin-top: 4rem;
+    margin-right: 5rem;
+    /* margin-left: Trabalha em conjunto com a var(--menu-width) */
+    margin-left: calc(100px + var(--menu-width));
+}
+
+.recuo-main {
+    padding-left: 1rem;
+}
+
+.tecla {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.25rem;
+    padding: 0.3rem;
+}
+
+.tecla-azul {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    /* border-color: var(--medium-gray);
+    border-style: solid; */
+    /* border-width: 1px; */
+    border-radius: 0.4rem;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+}
+
+.botao-cinza {
+    background-color: var(--medium-gray);
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+}
+
+.red-circle {
+    border-color: red;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 1rem;
+    padding: 0.3rem;
+    font-weight: bold;
+}
+
+.video-tag {
+    display: flex;
+    align-items: center;
+    background-color: #E7ECF3;
+    width: 240px;
+    padding: 12px;
+    border: solid 1px var(--light-black);
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.video-tag img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.6rem;
+}
+
+video {
+    width: 90%;
+    border: solid 1px var(--light-black);
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.diagrama {
+    width: 700px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.divider {
+    height: 3rem;
+}
+
+/* Cards / Boards ================ */
+
+.yellow-board{
+    background-color: rgba(255,229,100,0.3);
+    border-left-color: #ffe564;
+    border-left-width: 9px;
+    border-left-style: solid;
+    padding: 30px 30px 20px 36px;
+}
+
+.yellow-board h4 {
+    padding-bottom: 0.6rem;
+}
+
+.screen {
+    width: 90%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.v-middle {
+    vertical-align: middle;
+}
+
+.active1 {
+    color: var(--sei-blue);
+    font-weight: bold;
+}
+
+span.bu {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+span.bi {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.1rem;
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
+}
+
+span.bold {
+    font-weight: bold;
+}
